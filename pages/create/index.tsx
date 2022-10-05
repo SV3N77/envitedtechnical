@@ -3,23 +3,23 @@ import React from "react";
 // Event name, Host name, Start and End time/date, Location and Event photo.
 function index() {
   return (
-    <div className=" flex flex-col pt-4 container mx-auto px-4 gap-4">
+    <div className=" flex flex-col pt-4 max-w-lg mx-auto px-4 md:pt-20 gap-4">
       <p className="text-5xl md:text-6xl font-bold text-primary-1">
         Create a new{" "}
         <span className="bg-gradient-to-r bg-clip-text text-transparent to-primary-0 from-primary-3">
           Event
         </span>
       </p>
-      <form className="flex flex-col gap-4">
+      <form className="flex flex-col gap-4 md:mt-8">
         <Input label="Event Name" name="eventName" type="text" />
         <Input label="Host Name" name="hostName" type="text" />
         <Input label="Start Date" name="start" type="datetime-local" />
         <Input label="End Date" name="end" type="datetime-local" />
         <Input label="Location" name="location" type="text" />
-        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-primary-2 border-dashed rounded-md bg-white">
+        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-primary-1 border-dashed rounded-md bg-white">
           <div className="space-y-1 text-center">
             <svg
-              className="mx-auto h-12 w-12 text-gray-400"
+              className="mx-auto h-12 w-12 text-primary-2"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 48 48"
@@ -53,7 +53,7 @@ function index() {
       </form>
 
       <Link href="/event">
-        <a className="text-neutrals-5 bg-gradient-to-r to-primary-0 from-primary-3 mt-8 text-white font-semibold rounded-xl p-4 flex tracking-wide md:w-80 justify-center md:text-2xl">
+        <a className="text-neutrals-5 bg-gradient-to-r to-primary-0 from-primary-3 mt-8 text-white font-semibold rounded-xl p-4 flex tracking-wide md:w-80 justify-center md:text-2xl md:self-end">
           Next
         </a>
       </Link>
